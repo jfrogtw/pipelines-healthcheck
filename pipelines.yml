@@ -18,4 +18,6 @@ pipelines:
           healthCheckUrl: "https://jfrog.com"
           notifyOnSuccess: false
           notifyOnFailure: false
-          stuff: "This is a string"
+          stuff: 
+           - "This is a string"
+           - "This is another string"
