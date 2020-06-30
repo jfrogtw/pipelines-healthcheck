@@ -6,7 +6,7 @@ resources:
       test: "Test"
 
 pipelines:
-   -name: MyHealthCheck
+   - name: MyHealthCheck
     steps:
       - name: step_1
         type: HealthCheck
@@ -15,4 +15,3 @@ pipelines:
           notifyOnSuccess: false
           notifyOnFailure: false
           stuff: "This is a string"
-		  
