@@ -1,0 +1,22 @@
+resources:
+  - name: MyTest
+    type: test
+    configuration:
+      bdood: "Dude"
+      test: "Test"
+
+pipelines:
+   -name: MyHealthCheck
+    configuration:
+      environmentVariables:
+        readOnly:
+          my_env_var: "hello" 
+    steps:
+      - name: step_1
+        type: HealthCheck
+        configuration:
+          healthCheckUrl: "https://jfrog.com"
+          notifyOnSuccess: false
+          notifyOnFailure: false
+          stuff: "This is a string"
+		  
