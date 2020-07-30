@@ -2,8 +2,9 @@ resources:
   - name: MyTest
     type: test
     configuration:
-      bdood: "Dude"
-      test: "Test"
+      alpha: "Dude"
+      number: 42
+      flag: true
 
 pipelines: 
   - name: MyHealthCheck
