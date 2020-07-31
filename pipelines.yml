@@ -22,5 +22,5 @@ pipelines:
           stuff: 
            - "This is a string"
            - "This is another string"
-           inputResources:
-            - name:         MyTesT
+          inputResources:
+           - name: MyTest
