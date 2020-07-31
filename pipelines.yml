@@ -1,4 +1,10 @@
 resources:
+  - name: MyGitHub
+    type: GitRepo
+    configuration:
+      path: jfrogtw/jfrog-pipelines-extensions-sample    # <-- Change to your repository path
+      gitProvider: tw_github                             # <-- Change to your GitHub integration
+      
   - name: MyTest
     type: test
     configuration:
@@ -24,3 +30,4 @@ pipelines:
            - "This is another string"
           inputResources:
            - name: MyTest
+           - name: MyGitHub
