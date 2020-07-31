@@ -19,7 +19,7 @@ pipelines:
         readOnly:
           my_env_var: "hello" 
     steps:
-      - name: step_1
+      - name: Health_Check_Step
         type: HealthCheck
         configuration:
           healthCheckUrl: "https://jfrog.com"
