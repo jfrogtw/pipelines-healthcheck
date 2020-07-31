@@ -2,7 +2,7 @@ resources:
   - name: MyTest
     type: test
     configuration:
-      alpha: "Dude"
+      alpha: "JFrog"
       number: 42
       flag: true
 
@@ -22,3 +22,5 @@ pipelines:
           stuff: 
            - "This is a string"
            - "This is another string"
+           inputResources:
+            - name:         MyTesT
